@@ -1,14 +1,19 @@
 
 import {BrowserRouter,Routes,Route} from 'react-router-dom' 
+import Home from './pages/Home'
+import About from './pages/About'
+import Contact from './pages/Contact'
+
+
 
 // react fragment --- parent dinu parda 
 function App() { 
   return (
     <BrowserRouter>
     <Routes>
-      <Route path='/' element={<h1>This is home page</h1>} />
-      <Route path='/about' element={<h2>This is about page</h2>} />
-      <Route path='/contact' element={<h1>This is contage page hoooo. </h1>} />
+      <Route path='/' element={<Home />} />
+      <Route path='/about' element={<About />} />
+      <Route path='/contact' element={<Contact />} />
     </Routes>
     </BrowserRouter>
    
